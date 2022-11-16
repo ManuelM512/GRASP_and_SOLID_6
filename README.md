@@ -25,3 +25,6 @@ La clase ```Thread``` está definida en el espacio de nombres ```System.Threadin
 
 
 ️➡️ **Que patrón(es) o principio(s) has usado para esto?**
+
+Para GetCookTime() aplique Expert, siendo que implementé este método en la clase Recipe, que conoce todos los pasos, y así puede calcular el tiempo que suman entre todos.
+Para Cook() aplique ISP, creando una clase privada para poder comunicar Recipe con CountdownTimer, sin generar dependencias mayores de cosas innecesarias.
